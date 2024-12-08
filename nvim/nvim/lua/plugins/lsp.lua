@@ -27,9 +27,9 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
+                'clangd',
                 "rust_analyzer",
                 "gopls",
-                "pyright",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -68,6 +68,12 @@ return {
                         }
                     }
                 end,
+            ["clangd"] = function ()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.clangd.setup({
+                        capabilities = capabilities,
+                    })
+            end
             }
         })
 
@@ -94,9 +100,9 @@ return {
         })
 
         vim.diagnostic.config({
-            -- update_in_insert = true,
+            update_in_insert = true,
             float = {
-                focusable = false,
+                focusable = true,
                 style = "minimal",
                 border = "rounded",
                 source = "always",
