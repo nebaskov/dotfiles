@@ -11,3 +11,6 @@ vim.api.nvim_set_keymap(
     '<cmd>lua vim.diagnostic.open_float()<cr>',
     opts
 )
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gr", vim.lsp.buf.references)
