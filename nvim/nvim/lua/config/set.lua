@@ -6,7 +6,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
-vim.opt.smartindent = false
+vim.opt.smartindent = false 
 
 vim.opt.wrap = false
 
@@ -28,3 +28,5 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = ""
 
 vim.g.mapleader = " "
+
+vim.opt.mouse = ""
