@@ -1,7 +1,7 @@
 return {
     'stevearc/conform.nvim',
     opts = {},
-    config = function ()
+    config = function()
         require("conform").setup({
             formatters_by_ft = {
                 lua = { "stylua" },
@@ -12,7 +12,7 @@ return {
                 -- You can use a function here to determine the formatters dynamically
                 python = function(bufnr)
                     if require("conform").get_formatter_info("ruff_format", bufnr).available then
-                        return { "ruff_format" }
+                        return { "isort", "ruff_format" }
                     else
                         return { "isort", "black" }
                     end
@@ -57,6 +57,5 @@ return {
                 require("conform").format({ bufnr = args.buf })
             end,
         })
-
     end
 }
