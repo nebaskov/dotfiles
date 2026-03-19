@@ -1,0 +1,18 @@
+
+[font]
+size = 15
+normal = { family = "Hack Nerd Font", style = "Regular"}
+
+[window]
+blur = true
+startup_mode = "Windowed"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/hotpurpletrafficlight-alacritty.toml"
+]
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\n"
