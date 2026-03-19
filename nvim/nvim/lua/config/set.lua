@@ -6,7 +6,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
-vim.opt.smartindent = false 
+vim.opt.smartindent = false
 
 vim.opt.wrap = false
 
@@ -18,6 +18,9 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+-- some cryptic symbols for proper rendering
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "no"
@@ -30,3 +33,5 @@ vim.opt.colorcolumn = ""
 vim.g.mapleader = " "
 
 vim.opt.mouse = ""
+
+vim.cmd("colorscheme hotpurpletrafficlight")
