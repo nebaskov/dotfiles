@@ -1,0 +1,60 @@
+# Velvet Pulse — Alacritty theme
+# Born from HotPurpleTrafficLight, softened for those who live in the terminal.
+# Place at: ~/.config/alacritty/themes/velvetpulse.toml
+# Then import in your alacritty.toml:
+#   [general]
+#   import = ["~/.config/alacritty/themes/velvetpulse.toml"]
+
+[colors.primary]
+background = "#0d0d1a"
+foreground = "#c8c8d8"
+
+[colors.cursor]
+text    = "#0d0d1a"
+cursor  = "#b07cff"
+
+[colors.vi_mode_cursor]
+text    = "#0d0d1a"
+cursor  = "#9a6adb"
+
+[colors.selection]
+text       = "#c8c8d8"
+background = "#2e2e5c"
+
+[colors.search.matches]
+foreground = "#0d0d1a"
+background = "#d9a06a"
+
+[colors.search.focused_match]
+foreground = "#0d0d1a"
+background = "#66d98e"
+
+[colors.hints.start]
+foreground = "#0d0d1a"
+background = "#d9a06a"
+
+[colors.hints.end]
+foreground = "#0d0d1a"
+background = "#9a6adb"
+
+# Normal colors
+[colors.normal]
+black   = "#181828"
+red     = "#d96070"
+green   = "#66d98e"
+yellow  = "#c5cc8a"
+blue    = "#7a8fd4"
+magenta = "#b07cff"
+cyan    = "#7dcfff"
+white   = "#c8c8d8"
+
+# Bright colors
+[colors.bright]
+black   = "#2a2a40"
+red     = "#e07080"
+green   = "#7ae0a0"
+yellow  = "#d9a06a"
+blue    = "#8b9fe0"
+magenta = "#c090ff"
+cyan    = "#90d8ff"
+white   = "#dddde8"
