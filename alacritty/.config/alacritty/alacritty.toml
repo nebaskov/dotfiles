@@ -9,7 +9,7 @@ startup_mode = "Windowed"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/hotpurpletrafficlight-alacritty.toml"
+    "~/.config/alacritty/themes/velvetpulse-alacritty.toml"
 ]
 
 [[keyboard.bindings]]

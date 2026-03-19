@@ -34,4 +34,4 @@ vim.g.mapleader = " "
 
 vim.opt.mouse = ""
 
-vim.cmd("colorscheme hotpurpletrafficlight")
+vim.cmd("colorscheme velvetpulse")
