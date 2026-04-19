@@ -30,7 +30,7 @@ return {
                 'clangd',
                 "rust_analyzer",
                 "gopls",
-                "pyright"
+                "basedpyright"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -53,7 +53,6 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
@@ -69,15 +68,15 @@ return {
                         }
                     }
                 end,
-                ["clangd"] = function ()
+                ["clangd"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.clangd.setup({
                         capabilities = capabilities,
                     })
                 end,
-                ["pyright"] = function ()
+                ["basedpyright"] = function()
                     local lspconfig = require("lspconfig")
-                    lspconfig.pyright.setup({
+                    lspconfig.basedpyright.setup({
                         capabilities = capabilities
                     })
                 end
