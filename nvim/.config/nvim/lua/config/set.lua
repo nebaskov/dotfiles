@@ -32,6 +32,6 @@ vim.opt.colorcolumn = ""
 
 vim.g.mapleader = " "
 
-vim.opt.mouse = ""
+vim.o.mouse = "a"
 
 -- vim.cmd("colorscheme velvetpulse")
