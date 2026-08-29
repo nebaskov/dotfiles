@@ -32,5 +32,9 @@ return {
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
         vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
         vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+        vim.keymap.set('n', '<leader>fr', function()
+                builtin.oldfiles({ cwd_only = true })
+            end,
+            { desc = 'Telescope find recently opened files in the current project' })
     end,
 }
