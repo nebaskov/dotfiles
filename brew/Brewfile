@@ -1,0 +1,163 @@
+tap "cleishm/neo4j"
+tap "hashicorp/tap"
+tap "minio/stable"
+tap "mongodb/brew"
+tap "ngrok/ngrok"
+tap "treeverse/lakefs"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Core application library for C
+brew "glib"
+# X.Org: Library for common extensions to the X11 protocol
+brew "libxext"
+# C/C++/ObjC language server
+brew "ccls"
+# Cross-platform make
+brew "cmake"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# XML 1.0 parser
+brew "expat"
+# GNU compiler collection
+brew "gcc"
+# TIFF library and utilities
+brew "libtiff"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# GitHub command-line tool
+brew "gh"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Distributed revision control system
+brew "git"
+# New file format for still image compression
+brew "jpeg-xl"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Generic command-line non-JVM Apache Kafka producer and consumer
+brew "kcat"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# DNS library written in C
+brew "ldns"
+# Library for encoding and decoding .avif files
+brew "libavif"
+# Postgres C API library
+brew "libpq", link: true
+# Library to render SVG files using Cairo
+brew "librsvg"
+# X.Org: X Session Management Library
+brew "libsm"
+# Small memory footprint, flexible web-server
+brew "lighttpd"
+# LLM inference in C/C++
+brew "llama.cpp"
+# Find what models run on your hardware
+brew "llmfit"
+# NCurses Disk Usage
+brew "ncdu"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Utility for managing network connections
+brew "netcat"
+# Image manipulation
+brew "netpbm"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
+# Open client for Cisco AnyConnect VPN
+brew "openconnect"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Password manager
+brew "pass"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Tool for managing OCI containers and pods
+brew "podman"
+# Object-relational database system
+brew "postgresql@11"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Real First Universal Charset Detector, maintained alternative to Chardet
+brew "python-charset-normalizer"
+# HTTP library with thread-safe connection pooling, file post, and more
+brew "python-urllib3"
+# Python HTTP for Humans
+brew "python-requests"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Non-interactive SSH password auth
+brew "sshpass"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Tool Command Language
+brew "tcl-tk"
+# User interface to the TELNET protocol
+brew "telnet"
+# Terminal multiplexer
+brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Internet file retriever
+brew "wget"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+cask "font-hack-nerd-font"
+cask "font-meslo-lg-nerd-font"
+# Full TeX Live distribution with GUI applications
+cask "mactex"
+# Minimal installer for conda
+cask "miniconda"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+vscode "anysphere.cursorpyright"
+vscode "anysphere.remote-ssh"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "tamasfe.even-better-toml"
+go "github.com/nebaskov/gwt"
+cargo "rustlings"
+cargo "xsv"
+uv "ty"
+npm "@earendil-works/pi-coding-agent"

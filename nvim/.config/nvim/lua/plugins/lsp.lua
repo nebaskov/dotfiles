@@ -26,33 +26,28 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "lua_ls",
-                'clangd',
-                "rust_analyzer",
+                "bashls",
+                "clangd",
+                "gitlab_ci_ls",
+                "gh_actions_ls",
                 "gopls",
-                "basedpyright"
+                "helm_ls",
+                "html",
+                "jinja_lsp",
+                "jsonls",
+                "lua_ls",
+                "markdown_oxide",
+                "nginx_language_server",
+                "pyright",
+                "rust_analyzer",
+                "ts_ls",
+                "yamlls",
             },
             handlers = {
-                function(server_name) -- default handler (optional)
+                function(server_name) -- default handler
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
-                end,
-
-                zls = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.zls.setup({
-                        root_dir = lspconfig.util.root_pattern(".git", "build.zig", "zls.json"),
-                        settings = {
-                            zls = {
-                                enable_inlay_hints = true,
-                                enable_snippets = true,
-                                warn_style = true,
-                            },
-                        },
-                    })
-                    vim.g.zig_fmt_parse_errors = 0
-                    vim.g.zig_fmt_autosave = 0
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
@@ -68,18 +63,6 @@ return {
                         }
                     }
                 end,
-                ["clangd"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.clangd.setup({
-                        capabilities = capabilities,
-                    })
-                end,
-                ["basedpyright"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.basedpyright.setup({
-                        capabilities = capabilities
-                    })
-                end
             }
         })
 

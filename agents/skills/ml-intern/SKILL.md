@@ -1,6 +1,13 @@
 ---
 name: ml-intern
-description: Autonomously research, implement, train and ship ML code using the Hugging Face ecosystem. Port of huggingface/ml-intern as a Claude Code skill. Triggers when the user asks to implement, train, fine-tune, or reproduce an ML model / paper / dataset workflow (e.g. "implement DeepSeek-V3 at 100M", "fine-tune Qwen on dataset X", "reproduce paper Y"). HF-native: pulls datasets/models/papers from the Hub, pushes trained checkpoints + run logs back to the Hub. Emits Telegram + Slack milestone alerts via scripts/notify.sh.
+description: >-
+  Autonomously research, implement, train and ship ML code using the Hugging Face
+  ecosystem. Port of huggingface/ml-intern as a Claude Code skill. Triggers when
+  the user asks to implement, train, fine-tune, or reproduce an ML model / paper /
+  dataset workflow (e.g. "implement DeepSeek-V3 at 100M", "fine-tune Qwen on
+  dataset X", "reproduce paper Y"). HF-native: pulls datasets/models/papers from
+  the Hub, pushes trained checkpoints + run logs back to the Hub. Emits Telegram
+  + Slack milestone alerts via scripts/notify.sh.
 ---
 
 # ml-intern — Claude Code skill
